@@ -1,0 +1,194 @@
+/* --- GENERAL ----*/
+.card {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.abs {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.divImg {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+/* --- FIM GENERAL ----*/
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5vw;
+    height: 100%;
+    color: #660099;
+    text-align: center;
+    background-image: url(../images/farm.png), url(../images/ceu.png);
+    background-color: transparent;
+    background-size: contain, cover;
+    background-position-x: center, center;
+    background-position-y: bottom, center;
+    background-repeat: no-repeat, no-repeat;
+}
+
+h1 {
+    font-size: 3vw;
+    font-family: Officina Bld, Arial, Helvetica, sans-serif;
+}
+
+p {
+    width: 40vw;
+    font-size: 1.7vw;
+    font-family: Officina Book, Arial, Helvetica, sans-serif;
+}
+
+.container_btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 4vw;
+    width: 90%;
+    height: auto;
+}
+
+#container_btns_01 {
+    margin-top: 1vw;
+}
+
+#container_btns_02 {
+    transform: scaleY(-1);
+}
+
+.btns {
+    z-index: 0;
+    position: relative;
+    cursor: pointer;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+.btn_01,
+.btn_04 {
+    width: 9vw;
+    height: 5vw;
+    background-image: url(../images/btn_01.png);
+}
+
+.btn_02,
+.btn_05 {
+    width: 2vw;
+    height: 6vw;
+    background-image: url(../images/btn_02.png);
+}
+
+.btn_03,
+.btn_06 {
+    width: 9vw;
+    height: 5vw;
+    background-image: url(../images/btn_03.png);
+}
+
+#drone {
+    width: 26vw;
+    z-index: 1;
+}
+
+svg {
+    position: relative;
+    margin: 0 auto;
+}
+
+.farmer {
+    position: absolute;
+    bottom: 3vw;
+    right: 4vw;
+    width: 16vw;
+}
+
+/* POPS */
+.pop_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 9;
+    background-color: transparent;
+    animation: fadeIn .5s forwards linear;
+}
+
+.pop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+    padding: 3vw 0;
+    border-radius: 1.2vw;
+    background-color: rgba(34, 24, 75, .9);
+}
+
+.btn_close {
+    position: absolute;
+    top: 4.2%;
+    right: 1.9%;
+    width: 6%;
+    height: 3vw;
+    z-index: 1;
+    cursor: pointer;
+    background-image: url(../images/btn_close.png);
+}
+
+.btn_close:hover {
+    animation: hlbtn 1.5s linear infinite forwards;
+}
+
+.pop h6 {
+    font-size: 1.8vw;
+    color: #ff9900;
+}
+
+.pop p {
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6vw;
+    margin: 1vw 0 3vw 0;
+}
+
+.pop p#txt_01 {
+    width: 61%;
+    margin: 1vw 0 5vw 0;
+}
+
+.pop p#txt_02 {
+    width: 74%;
+}
+
+.pop p#txt_04 {
+    width: 55%;
+}
+
+.pop p#txt_06 {
+    width: 69%;
+}
+
+.pop_img_drone {
+    width: 75%;
+    height: 10vw;
+    margin-top: 1vw;
+    background-image: url(../images/pop_img_drone.png);
+}
+
+.line {
+    width: 22%;
+    height: .2vw;
+    background-color: #fff;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infográfico</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/portrait.css">
+</head>
+
+<body>
+    <div id="container" class="card">
+        <h1>Lorem Ipsum</h1>
+
+        <p>Neque <strong>Lorem Ipsum</strong> sed imperdiet lobortis ex ac gravida. Integer elit dui, sodales et mi a,
+            porttitor.</strong>
+        </p>
+
+        <div id="container_btns_01" class="container_btns">
+            <div class="divImg btns btn_01" onclick="showPops(0);"></div>
+            <div class="divImg btns btn_02" onclick="showPops(1);"></div>
+            <div class="divImg btns btn_03" onclick="showPops(2);"></div>
+        </div>
+
+        <div id="drone"></div>
+
+        <div id="container_btns_02" class="container_btns">
+            <div class="divImg btns btn_04" onclick="showPops(3);"></div>
+            <div class="divImg btns btn_05" onclick="showPops(4);"></div>
+            <div class="divImg btns btn_06" onclick="showPops(5);"></div>
+        </div>
+
+        <img src="./images/farmer.png" alt="" class="farmer">
+
+        <div class="pop_container hide">
+            <div class="abs pop"></div>
+        </div>
+    </div>
+
+    <!--    SCRIPTS     -->
+    <script src="./js/libs/gsap.min.js" type="text/javascript"></script>
+    <script src="./js/drone_svg_embed.js" type="text/javascript"></script>
+    <script src="./js/txts_pops.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

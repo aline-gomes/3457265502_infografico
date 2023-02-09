@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Officina Bld;
+    src: url('../fonts/OfficinaSerifBoldITC-Regular.woff');
+}
+
+@font-face {
+    font-family: Officina Book;
+    src: url('../fonts/OfficinaSerifBookITC-Regular.woff');
+}
+
+@font-face {
+    font-family: Officina Extra Bld;
+    src: url('../fonts/OfficinaSerifExtraBoldITC-Reg.woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*No text select*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #4c1e65;
+    font-family: 'Officina Book', Arial, Helvetica, sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hlbtn {
+    0% {
+        filter: drop-shadow(0px 0px 2px #fff);
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 6px #fff);
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 2px #fff);
+    }
+}
+
+/* HÉLICES */
+.wing {
+    transform-box: fill-box;
+    animation: rotation .2s linear infinite;
+}
+
+.wing.right {
+    transform-origin: center right;
+}
+
+.wing.left {
+    transform-origin: center left;
+}
+
+@keyframes rotation {
+    100% {
+        transform: rotateY(360deg);
+    }
+}

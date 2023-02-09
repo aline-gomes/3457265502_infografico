@@ -1,0 +1,107 @@
+@media (orientation: portrait) {
+    #container {
+        justify-content: flex-start;
+        background-image: url(../images/portrait/farm.png), url(../images/ceu.png);
+    }
+
+    h1 {
+        font-size: 8vw;
+        margin-top: 19vw;
+    }
+
+    p {
+        width: 90vw;
+        font-size: 3.8vw;
+    }
+
+    .container_btns {
+        gap: 8vw;
+        z-index: 1;
+    }
+
+    #container_btns_01 {
+        margin-top: 6vw;
+    }
+
+    .btn_01,
+    .btn_03,
+    .btn_04,
+    .btn_06 {
+        width: 27vw;
+        height: 12vw;
+    }
+
+    .btn_02,
+    .btn_05 {
+        width: 7vw;
+        height: 15vw;
+    }
+
+    #drone {
+        width: 74vw;
+    }
+
+    .farmer {
+        bottom: 12vw;
+        width: 45vw;
+        z-index: 0;
+    }
+
+    /* POPS */
+    .pop {
+        width: 85vw;
+        padding: 14vw 0;
+        border-radius: 4vw;
+    }
+
+    .btn_close {
+        top: 4.8%;
+        right: 2.9%;
+        width: 9%;
+        height: 6.5vw;
+    }
+
+    .pop h6 {
+        font-size: 4.5vw;
+    }
+
+    .pop p {
+        width: 86%;
+        font-size: 3.5vw;
+        margin: 2.5vw 0 9vw 0;
+    }
+
+    .pop p#txt_01 {
+        width: 79%;
+        margin: 1vw 0 12vw 0;
+    }
+
+    .pop p#txt_02 {
+        width: 78%;
+    }
+
+    .pop p#txt_04 {
+        width: 71%;
+    }
+
+    .pop p#txt_06 {
+        width: 75%;
+    }
+
+    .pop_img_drone {
+        width: 86%;
+        height: 20vw;
+        margin-top: 3vw;
+    }
+
+    .line {
+        width: 33%;
+        height: 0.4vw;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .farmer {
+        display: none;
+    }
+}
