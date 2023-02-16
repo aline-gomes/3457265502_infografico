@@ -43,7 +43,7 @@
 
     .farmer {
         bottom: 12vw;
-        width: 45vw;
+        width: 61vw;
         z-index: 0;
     }
 
@@ -86,12 +86,6 @@
 
     .pop p#txt_06 {
         width: 75%;
-    }
-
-    .pop_img_drone {
-        width: 86%;
-        height: 20vw;
-        margin-top: 3vw;
     }
 
     .line {
