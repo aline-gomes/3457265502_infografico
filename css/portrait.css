@@ -4,6 +4,12 @@
         background-image: url(../images/portrait/farm.png), url(../images/ceu.png);
     }
 
+    .retranca {
+        top: 7vw;
+        width: 35vw;
+        height: 8vw;
+    }
+
     h1 {
         font-size: 8vw;
         margin-top: 19vw;
@@ -43,7 +49,7 @@
 
     .farmer {
         bottom: 12vw;
-        width: 45vw;
+        width: 61vw;
         z-index: 0;
     }
 

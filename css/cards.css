@@ -2,7 +2,11 @@
 .card {
     position: relative;
     width: 100%;
+    color: #fff;
     margin: 0 auto;
+    overflow: hidden;
+    background: unset;
+    background-repeat: no-repeat;
 }
 
 .abs {
@@ -33,6 +37,17 @@
     background-position-x: center, center;
     background-position-y: bottom, center;
     background-repeat: no-repeat, no-repeat;
+}
+
+.retranca {
+    position: absolute;
+    top: 2.5vw;
+    left: 0;
+    width: 16vw;
+    height: 3vw;
+    background-image: url(../images/retranca.png);
+    background-position-x: left;
+    background-position-y: center;
 }
 
 h1 {
@@ -107,7 +122,7 @@ svg {
     position: absolute;
     bottom: 3vw;
     right: 4vw;
-    width: 16vw;
+    width: 21vw;
 }
 
 /* POPS */
@@ -146,10 +161,6 @@ svg {
     background-image: url(../images/btn_close.png);
 }
 
-.btn_close:hover {
-    animation: hlbtn 1.5s linear infinite forwards;
-}
-
 .pop h6 {
     font-size: 1.8vw;
     color: #ff9900;
@@ -158,13 +169,14 @@ svg {
 .pop p {
     width: 80%;
     color: #fff;
-    text-align: center;
+    text-align: left;
     font-size: 1.6vw;
     margin: 1vw 0 3vw 0;
 }
 
 .pop p#txt_01 {
     width: 61%;
+    text-align: center;
     margin: 1vw 0 5vw 0;
 }
 
@@ -178,6 +190,11 @@ svg {
 
 .pop p#txt_06 {
     width: 69%;
+}
+
+.pop .break_line {
+    display: block;
+    margin-bottom: .5vw;
 }
 
 .pop_img_drone {
